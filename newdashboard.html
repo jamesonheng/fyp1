@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Home Cam Dashboard</title>
+    <style>
+        /* Flex container to display videos side by side */
+        #videoContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* Style each video element */
+        video {
+            width: 480px;
+            height: 480px;
+            display: none;
+        }
+
+        /* Style the navigation bar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #007bff;
+            padding: 15px;
+            text-align: center;
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        #datetime {
+            font-size: 36px;
+            margin-top: 20px;
+            border: 2px solid #333;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 20px;
+        }
+
+        .num-videos-shown {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#recorded">Recorded Footage</a>
+        <a href="http://localhost:8888/notebooks/FYP%20DASHBOARD/savefootage.ipynb" target="_blank">Save Footage</a>
+		<a href="http://localhost:8888/notebooks/FYP%20DASHBOARD/Deletefile.ipynb" target="_blank">Delete Footage</a>
+		
+    </nav>
+    <div id="home" class="page">
+        <br><br><br>
+        <h1 class="center">Welcome To My Home Cam Dashboard</h1>
+        <div id="datetime">Loading...</div>
+        <p class="center num-videos-shown" id="numVideosShown"></p>
+		<p class="num-videos-shown" id="numSmallMotionShown"></p>
+		<p class="num-videos-shown" id="numBigMotionShown"></p>
+
+        <p class="center">Click On Recorded Footage Tab To View The Videos</p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="recorded" class="page">
+        <br><br><br>
+        <h1 class="center">Recorded Footage</h1>
+        <!-- Flex container to hold the videos side by side -->
+        <div id="videoContainer">
+
+            <div class="video-wrapper">
+                <video id="video1">
+                    Your browser does not support the video tag or the video format.
+                </video>
+                <p class="video-name" id="videoName1"></p>
+            </div>
+			
+			<div class="video-wrapper">
+                <video id="video2">
+                    Your browser does not support the video tag or the video format.
+                </video>
+                <p class="video-name" id="videoName2"></p>
+            </div>
+			
+			        <div class="video-wrapper">
+            <video id="video3">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName3"></p>
+        </div>
+            
+        <div class="video-wrapper">
+            <video id="video4">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName4"></p>
+        </div>
+                
+        <div class="video-wrapper">
+		    <video id="video5">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName5"></p>
+        </div>
+                    
+        <div class="video-wrapper">
+		    <video id="video6">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName6"></p>
+        </div>
+                    
+        <div class="video-wrapper">
+            <video id="video7">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName7"></p>
+        </div>
+                        
+        <div class="video-wrapper">
+            <video id="video8">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName8"></p>
+        </div>
+                            
+        <div class="video-wrapper">
+            <video id="video9">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName9"></p>
+        </div>
+                                
+        <div class="video-wrapper">
+            <video id="video10">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName10"></p>
+        </div>
+
+		<div class="video-wrapper">
+            <video id="video11">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName11"></p>
+        </div>
+
+		<div class="video-wrapper">
+            <video id="video12">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName12"></p>
+        </div>
+
+		<div class="video-wrapper">
+            <video id="video13">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName13"></p>
+        </div>
+
+		<div class="video-wrapper">
+            <video id="video14">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName14"></p>
+        </div>
+
+		<div class="video-wrapper">
+            <video id="video15">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName15"></p>
+        </div>
+
+		<div class="video-wrapper">
+            <video id="video16">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName16"></p>
+        </div>		
+		
+		
+		<div class="video-wrapper">
+            <video id="video17">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName17"></p>
+        </div>
+		
+		<div class="video-wrapper">
+            <video id="video18">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName18"></p>
+        </div>
+		
+		<div class="video-wrapper">
+            <video id="video19">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName19"></p>
+        </div>
+		
+		<div class="video-wrapper">
+            <video id="video20">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName20"></p>
+        </div>
+		
+		<div class="video-wrapper">
+            <video id="video21">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName21"></p>
+        </div>
+		
+		<div class="video-wrapper">
+            <video id="video22">
+            Your browser does not support the video tag or the video format.
+            </video>
+            <p class="video-name" id="videoName22"></p>
+        </div>
+
+			
+        </div>
+    </div>
+
+    <script>
+        // Function to format the date and time as a string
+        function formatDateAndTime(date) {
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            return date.toLocaleString('en-US', options);
+        }
+
+        // Function to update the date and time display
+        function updateDateTime() {
+            const datetimeElement = document.getElementById('datetime');
+            const currentDate = new Date();
+            datetimeElement.textContent = formatDateAndTime(currentDate);
+        }
+
+        // Update the date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial update
+        updateDateTime();
+
+        // Counter to track the number of videos shown
+        var numVideosShown = 0;
+		var numSmallMotionShown = 0;
+		var numBigMotionShown = 0;
+
+        // Function to get the file name without extension
+        function getFileNameWithoutExtension(url) {
+            var filename = url.substring(url.lastIndexOf('/') + 1);
+			filename = filename.replace(/\d+/g, ""); // Remove digits from the file name
+            return filename.replace(/\.[^/.]+$/, ""); // Remove the file extension
+			
+        }
+
+		function formatDuration(duration) {
+            var minutes = Math.floor(duration / 60);
+            var seconds = Math.floor(duration % 60);
+            return minutes + "m " + seconds + "s";
+        }
+		
+
+        // Function to check existence and show videos if available
+        function showVideoIfExists(videoElement, videoUrl, videoText) {
+            videoElement.onloadeddata = function() {
+                videoElement.style.display = "block";
+                videoElement.setAttribute("controls", "controls");
+
+				
+				
+					// Display the video duration under the video
+                var duration = formatDuration(videoElement.duration);
+                var durationElement = document.createElement("p");
+                durationElement.textContent = "Duration of Motion: " + duration;
+                videoElement.parentNode.insertBefore(durationElement, videoElement.nextSibling);
+                
+				// Display the file name under the video
+                var fileName = getFileNameWithoutExtension(videoUrl);
+                var fileNameElement = document.createElement("p");
+                fileNameElement.textContent = fileName;
+                videoElement.parentNode.insertBefore(fileNameElement, videoElement.nextSibling);
+				
+                // Display the provided text under the video
+                var textElement = document.createElement("p");
+                textElement.textContent = videoText;
+                videoElement.parentNode.insertBefore(textElement, videoElement.nextSibling);
+
+			
+		// Check if the file name contains "Big Motion" or "Small Motion" and update the respective counters
+            if (fileName.includes("Big Motion")) {
+                numBigMotionShown++;
+                document.getElementById("numBigMotionShown").textContent = "Number of Big Motion Detected Today: " + numBigMotionShown;
+            } else if (fileName.includes("Small Motion")) {
+                numSmallMotionShown++;
+                document.getElementById("numSmallMotionShown").textContent = "Number of Small Motion Detected Today: " + numSmallMotionShown;
+            }
+			
+		
+				
+                // Increment the counter for videos shown
+                numVideosShown++;
+                // Update the displayed number of videos shown
+                document.getElementById("numVideosShown").textContent = "Number of Motion Detected Today: " + numVideosShown;
+				document.getElementById("numSmallMotionShown").textContent = "Number of Small Motion: " + numSmallMotionShown;
+				document.getElementById("numBigMotionShown").textContent = "Number of Big Motion: " + numBigMotionShown;
+
+				
+
+				
+                // Store the count in local storage
+                localStorage.setItem("numVideosShown", numVideosShown);
+				
+				
+				
+				
+            };
+
+            videoElement.onerror = function() {
+                videoElement.style.display = "none";
+            };
+
+            videoElement.src = videoUrl;
+        }
+
+        // Check existence and show videos if available
+        var video1 = document.getElementById("video1");
+        var video2 = document.getElementById("video2");
+        var video3 = document.getElementById("video3");
+    var video4 = document.getElementById("video4");
+    var video5 = document.getElementById("video5");
+    var video6 = document.getElementById("video6");
+    var video7 = document.getElementById("video7");
+    var video8 = document.getElementById("video8");
+    var video9 = document.getElementById("video9");
+    var video10 = document.getElementById("video10");
+	var video11 = document.getElementById("video11");
+    var video12 = document.getElementById("video12");
+    var video13 = document.getElementById("video13");
+    var video14 = document.getElementById("video14");
+    var video15 = document.getElementById("video15");
+    var video16 = document.getElementById("video16");
+    var video17 = document.getElementById("video17");
+    var video18 = document.getElementById("video18");
+    var video19 = document.getElementById("video19");
+    var video20 = document.getElementById("video20");
+	var video21 = document.getElementById("video21");
+	var video22 = document.getElementById("video22");
+
+        // Provide the text for each video
+        showVideoIfExists(video1, "recorded_footage_for_view/Small Motion1.ogg", "1st Motion Type Detected");
+        showVideoIfExists(video2, "recorded_footage_for_view/Big Motion1.ogg", "1st Motion Type Detected");
+		showVideoIfExists(video3, "recorded_footage_for_view/Small Motion2.ogg", "2nd Motion Type Detected");
+    showVideoIfExists(video4, "recorded_footage_for_view/Big Motion2.ogg", "2nd Motion Type Detected");
+	showVideoIfExists(video5, "recorded_footage_for_view/Small Motion3.ogg", "3rd Motion Type Detected");
+    showVideoIfExists(video6, "recorded_footage_for_view/Big Motion3.ogg", "3rd Motion Type Detected");
+	showVideoIfExists(video7, "recorded_footage_for_view/Small Motion4.ogg", "4th Motion Type Detected");
+    showVideoIfExists(video8, "recorded_footage_for_view/Big Motion4.ogg", "4th Motion Type Detected");
+	showVideoIfExists(video9, "recorded_footage_for_view/Small Motion5.ogg", "5th Motion Type Detected");
+    showVideoIfExists(video10, "recorded_footage_for_view/Big Motion5.ogg", "5th Motion Type Detected");
+	showVideoIfExists(video11, "recorded_footage_for_view/Small Motion6.ogg", "6th Motion Type Detected");
+    showVideoIfExists(video12, "recorded_footage_for_view/Big Motion6.ogg", "6th Motion Type Detected");
+	showVideoIfExists(video13, "recorded_footage_for_view/Small Motion7.ogg", "7th Motion Type Detected");
+    showVideoIfExists(video14, "recorded_footage_for_view/Big Motion7.ogg", "7th Motion Type Detected");
+	showVideoIfExists(video15, "recorded_footage_for_view/Small Motion8.ogg", "8th Motion Type Detected");
+    showVideoIfExists(video16, "recorded_footage_for_view/Big Motion8.ogg", "8th Motion Type Detected");
+	showVideoIfExists(video17, "recorded_footage_for_view/Small_Motion9.ogg", "9th Motion Type Detected");
+    showVideoIfExists(video18, "recorded_footage_for_view/Big Motion9.ogg", "9th Motion Type Detected");
+	showVideoIfExists(video19, "recorded_footage_for_view/Small Motion10.ogg", "10th Motion Type Detected");
+    showVideoIfExists(video20, "recorded_footage_for_view/Big Motion10.ogg", "10th Motion Type Detected");
+	showVideoIfExists(video21, "recorded_footage_for_view/Small Motion11.ogg", "11th Motion Type Detected");
+	showVideoIfExists(video21, "recorded_footage_for_view/Big Motion11.ogg", "11th Motion Type Detected");
+    showVideoIfExists(video22, "recorded_footage_for_view/Big Motion12.ogg", "12th Motion Type Detected");
+    showVideoIfExists(video22, "recorded_footage_for_view/Small Motion12.ogg", "12th Motion Type Detected");
+        
+
+    </script>
+
+</body>
+</html>
